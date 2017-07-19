@@ -1,0 +1,20 @@
+@charset "utf-8";
+.my {
+}
+ul a {
+	font-size: 24px;
+	line-height: 50px;
+	font-weight: bold;
+	color: #000;
+	background-color: #D8C2AB;
+	text-align: center;
+	display: block;
+	padding: 2px;
+	list-style-type: circle;
+}
+ul a:hover {
+	background-color: #B5B674;
+}
+ul {
+	list-style-type: square;
+}
