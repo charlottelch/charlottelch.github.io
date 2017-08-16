@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").click(function(){
+    $.getJSON("https://raw.githubusercontent.com/charlottelch/charlottelch.github.io/master/webdesign/fashion/gifts.json", function(result){
+      $.each(result, function(i, field){
+        $("p").append("test");
+      });
+    });
+  });
+});
+</script>
+</head>
+
+<body>
+
+<button>获得 JSON 数据</button>
+<p></p>
+
+</body>
+</html>
