@@ -4,7 +4,7 @@
 <script type="text/javascript">
 $(document).ready(function(){
   $("button").click(function(){
-    $.getJSON("https://raw.githubusercontent.com/charlottelch/charlottelch.github.io/master/webdesign/fashion/gifts.json", function(result){
+    $.getJSON("gifts.json", function(result){
       $.each(result, function(i, field){
         $("p").append("test");
       });
