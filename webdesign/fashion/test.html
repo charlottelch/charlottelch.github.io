@@ -6,6 +6,8 @@ $(document).ready(function(){
   $("button").click(function(){
     $.getJSON("gifts.json", function(result){
       $.each(result, function(i, field){
+        console.log("a new field");
+        console.log(field);
         $("p").append(field + " ");
       });
     });
