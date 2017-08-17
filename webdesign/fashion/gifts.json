@@ -1,8 +1,10 @@
 {
+  "gifts": [  
   {"name": "gift1",
     "number": 10,
   },
   {"name": "gift2",
     "number": 20,
   },
+  ]
 }
