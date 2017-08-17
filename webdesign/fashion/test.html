@@ -4,7 +4,7 @@
 <script type="text/javascript">
 $(document).ready(function(){
   $("button").click(function(){
-    $.getJSON("tt.json", function(result){
+    $.getJSON("gifts.json", function(result){
       $.each(result, function(i, field){
         $("p").append(field + " ");
       });
