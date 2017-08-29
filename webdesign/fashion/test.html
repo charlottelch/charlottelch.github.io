@@ -14,9 +14,9 @@ xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myObj = JSON.parse(this.responseText);
         document.getElementById("demo").innerHTML = "this is our gifts.json <br>";
-        document.getElementById("demo").innerHTML += myObj.gifts[0].name + ", price:" + myObj.gifts[0].prices + "<br>";
-        document.getElementById("demo").innerHTML += myObj.gifts[1].name + ", price:" + myObj.gifts[1].prices + "<br>";
-        document.getElementById("demo").innerHTML += myObj.gifts[2].name + ", price:" + myObj.gifts[2].prices + "<br>";
+        document.getElementById("demo").innerHTML += myObj.gifts[0].name + ", price:" + myObj.gifts[0].price + "<br>";
+        document.getElementById("demo").innerHTML += myObj.gifts[1].name + ", price:" + myObj.gifts[1].price + "<br>";
+        document.getElementById("demo").innerHTML += myObj.gifts[2].name + ", price:" + myObj.gifts[2].price + "<br>";
     }
 };
 xmlhttp.open("GET", "gifts.json", true);
